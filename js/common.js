@@ -45,23 +45,6 @@ $(function () {
 		interval: false,
 		wrap: false
 	});
-
-	//	var ctrlLeft = $(".company .carousel-control.left"),
-	//		ctrlRight = $(".company .carousel-control.right");
-	//	
-	//	ctrlLeft.hide();
-	//	ctrlLeft.click(function () {
-	//		$(this).hide();
-	//		ctrlRight.show();
-	//	});
-	//	
-	//	ctrlRight.click(function () {
-	//		$(this).hide();
-	//		ctrlLeft.show();
-	//	});
-//	$('.carousel').carousel({
-//		interval: 30000000
-//	});
 	$(".carousel").swiperight(function () {
 		$(this).carousel('prev');
 	});
