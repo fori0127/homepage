@@ -1,0 +1,128 @@
+// out: ../../css/style.css, compress: true
+//@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+@import "../css/bootstrap.min.css";
+@import "fonts.less";
+@import "header.less";
+@import "main.less";
+/* reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button {margin:0;padding:0}
+* { font-family: 'Noto Sans KR', 'Spoqa Han Sans', 'Sans-serif'; }
+ul, ol, li{list-style:none;}
+dl{margin:0;}
+a {color:#333;text-decoration:none}
+a:active, a:hover, a:focus {color: #333;text-decoration:none}
+@media(min-width: 992px){
+	.container, .container-fluid{padding:0;}
+}
+.panel{
+    margin: 0;
+    background: none;
+}
+.btn{
+    padding: 0;
+    border-radius: 0;
+}
+@media (min-width: 1200px){
+    .container {
+        width: 1028px;
+    }
+}
+.carousel{
+    .carousel-control{
+		opacity: 1;
+        &.left, &.right{background: none;}
+        &:focus{
+			opacity: .5;
+			outline: 5px auto -webkit-focus-ring-color;
+		}
+    }
+    .carousel-indicators {
+        li, li.active{
+            width: auto;
+            height: auto;
+            margin: 0;
+            border-radius: 0;
+			border: 0;
+			background: none;
+        }
+		li{
+			margin: 0 2px;
+			a{
+				display: block;
+				width: 8px;
+				height: 8px;
+				border-radius: 4px;
+				background-color: #666;
+			}
+			&.active{
+				margin: 0 2px;
+				a{background-color: #2da0f4;}                
+			}
+		}
+    }
+    .carousel-caption{
+        text-shadow: none;
+    }
+	.carousel-control{
+		width: 10%;
+		&.left, &.right{
+			text-align: inherit;
+			[class^="btn_"]{
+				position: absolute;
+				top: 50%;
+				display: inline-block;
+				width: 32px;
+				height: 60px;
+				margin-top: -30px;				
+				background-size: cover;
+				transition: background .2s;				
+			}
+			.btn_prev{
+				left: 15%;
+				background-image: url(../images/main/btn_prev.png)
+			}
+			.btn_next{
+				right: 15%;
+				background-image: url(../images/main/btn_next.png)
+			}
+			&:hover{
+				.btn_prev{
+					background-image: url(../images/main/btn_prev_on.png)
+				}
+				.btn_next{
+					background-image: url(../images/main/btn_next_on.png)
+				}
+			}
+		}
+	}
+}
+@media(min-width:768px){
+	.carousel{
+		.carousel-control{
+			&.left, &.right{
+				[class^="btn_"]{
+					position: absolute;
+					top: 50%;
+					display: inline-block;
+					width: 16px;
+					height: 30px;
+					margin-top: -15px;
+					transition: background .2s;
+				}
+			}
+		}
+	}
+}
+@media(min-width:992px){
+	.carousel{
+		.carousel-control{
+			&.left, &.right{
+				[class^="btn_"]{
+					width: 32px;
+					height: 60px;
+					margin-top: -30px;
+				}
+			}
+		}
+	}
+}
