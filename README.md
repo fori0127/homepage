@@ -36,8 +36,8 @@
 
 ### [Easing][easing]
 
-> jQuery에 기본으로 정의된 "swing", "linear" 외에 추가적인 easing function()을 제공하는 라이브러리로 scrollTop을 변경하는 animate()에서 "easeInOutExpo"를 사용하기 위해서 포함하였다.<br>
-> easing function에 대한 자세한 내용은 [easings.net][easings]를 참고해라.
+> jQuery에 기본으로 정의된 "swing", "linear" 외에 추가적인 easing functions을 제공하는 라이브러리로 scrollTop을 변경하는 animate()에서 "easeInOutExpo"를 사용하기 위해서 포함하였다.<br>
+> easing functions에 대한 자세한 내용은 [easings.net][easings]를 참고해라.
 
 ### [jQueryMobile][jquerymobile]
 
@@ -45,11 +45,16 @@
 
 ## 서버 정보
 
-- IP : 114.202.137.253
+- IP : 114.202.137.251
 - ID : rnd
 - PW : open1404
 - www_root path : /Users/rnd/Sites
 
+## 비고
+
+- 구글맵 API 사용하여 지도 표시
+- 부트스트랩을 사용하여 반응형으로 작업
+- 부트스트랩 IE9부터 지원 이하 버전은 미지원
 
 [less]: http://lesscss.org/
 [sass]: http://www.sass-lang.com/
